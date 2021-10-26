@@ -43,7 +43,7 @@ const Navbar = () => {
             initial='hidden'
             animate='visible'
         >
-            <Link to='/' style={{ textDecoration: 'none', color: '#fff ' }}>
+            <Link to='/' style={{ textDecoration: 'none', color: '#fff ' }} onClick={scrollToTop}>
                 <li><h1 className="nav-icon">ICELAND</h1></li>
             </Link>
             <i id='burger' className={`fas fa-${navOpen ? 'times' : 'bars'}`} onClick={() => setNavOpen(!navOpen)}></i>
