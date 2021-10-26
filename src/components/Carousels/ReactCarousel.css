@@ -1,33 +1,36 @@
-.tour-carousel {
-    width: 20%;
-}
-
 .tour-item-img {
-    width:90%;
-    margin-left: 2rem;
-    object-fit: contain;
-    border-radius: 10px;
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .react-carousel {
-    max-width: 700px;
+  width: 700px;
+  border: 2px solid;
 }
 
 @media screen and (max-width: 1290px) {
-    .react-carousel {
-        margin-top: 3rem;
-    }
+  .react-carousel {
+    margin-top: 3rem;
+  }
 }
 
-@media screen and (max-width: 500px) {
-    .tour-item-img {
-        margin-left: 2.5rem;
-        width: 80%;
-    }
+@media screen and (max-width: 540px) {
+  .tour-item-img {
+    height: 200px;
+  }
+  .react-carousel {
+    width: 350px;
+  }
 }
 
 @media screen and (max-width: 300px) {
-    .tour-item-img {
-        margin-left: 1.9rem;
-    }
+  .tour-item-img {
+    height: 150px;
+  }
+  .react-carousel {
+    width: 700px;
+    border: 2px solid;
+  }
 }
