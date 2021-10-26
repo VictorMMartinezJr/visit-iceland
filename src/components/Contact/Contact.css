@@ -1,0 +1,164 @@
+.contact-container {
+    height: 100vh;
+    background: url('https://images.hdqwalls.com/download/snow-winter-iceland-aurora-northern-lights-6p-3840x2400.jpg');
+    background-color: rgba(0,0,0,.4); /* Tint color */
+    background-blend-mode: multiply;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-modal {
+    background: #011f35;
+    height: 70vh;
+    width: 800px;
+    margin: 5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+.contact-modal-content {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-modal-content h1 {
+    font-weight: 900;
+    position: relative;
+}
+
+.contact-modal-content p {
+    font-size: 1.5rem;
+}
+
+.contact-modal-content h1::after {
+    content: '';
+    height: 4px;
+    width: 15%;
+    position: absolute;
+    background: #fff;
+    left: 38%;
+    bottom: 0;
+}
+
+.contact-modal-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 100%;
+}
+
+.form-input{
+   width: 100%;
+   border: none;
+   border-bottom: 1px solid #fff;
+   outline: none;
+   background: transparent;
+   color: #fff
+}
+
+.form-input-error {
+    color: red;
+
+}
+
+.contact-modal-content form button{
+    padding: .7rem 0;
+    border: 1px solid #fff;
+    background: transparent;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    margin-top: .5rem;
+}
+.contact-modal-content form button::before {
+    content: '';
+    background: #fff;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: width .2s ease-in-out;
+    z-index: -1;
+  }
+  
+  .contact-modal-content form button:hover::before {
+    width: 100%;
+    transition: width .2s ease-in-out;
+  }
+  
+  .contact-modal-content form button:hover {
+    color: #000;
+  }
+
+@media screen and (max-width: 1290px) {
+    .contact-container {
+        background-position: center;
+    }
+
+    .contact-modal {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact-modal {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .contact-modal-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-modal-content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .contact-modal-content form {
+        height: 60%;
+        width: 100%;
+    }
+
+    .span-input{
+        width: 45%;
+        border: none;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 1.5rem;
+     }
+}
+
+@media screen and (max-width: 400px) {    
+    .span-input{
+       width: 100%;
+    }
+    
+    .span-input.right {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {    
+    .contact-modal {
+        height: 80vh;
+    }
+}

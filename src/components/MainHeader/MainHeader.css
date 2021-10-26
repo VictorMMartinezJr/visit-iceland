@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.main-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60%;
+    color: #fff;
+    text-align: center;
+}
+
+.home-title { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+    
+}
+
+.home-title h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    font-size: 13rem;
+    text-shadow: 0 0 10px #fff;
+}
+
+.home-span {
+    font-family: 'Permanent Marker', cursive;
+    color: transparent;
+    font-size: 13rem;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #fff;      
+}
+
+
+.home-p {
+    font-size: 2rem;
+    font-weight: 900;
+    position: relative;
+}
+
+.home-p::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 5%;
+    height: 3px;
+    width: 90%;
+}
+
+.home-read-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    font-weight: 900;
+}
+
+.home-read-more p {
+    font-size: 1.5rem;
+}
+
+.fade-bottom {
+    position: absolute;
+    bottom: 0;
+    height: 7.4rem;
+    width: 100%;
+    background: linear-gradient(180deg, transparent, #001422);
+    z-index: 4;
+}
+
+@media screen and (max-width: 1290px) {
+    .main-titles {
+        width: 70%;
+    }
+    .home-read-more {
+        bottom: -45px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home-title h1, .home-span {
+        font-size: 9rem;
+    }
+
+    .home-p {
+        font-size: 1.5rem;
+    }
+
+    .home-read-more {
+        bottom: -40px;
+        right: -100px;
+    }
+
+    .home-read-more p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .home-title h1, .home-span {
+        font-size: 5rem;
+    }
+
+    .home-p {
+        font-size: 1rem;
+    }
+
+    .home-p::after {
+        bottom: -5px;
+    }
+
+    .home-read-more {
+        bottom: -85px;
+        right: 0;
+        left: 0;
+    }
+
+    .home-read-more p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-title h1, .home-span {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .home-title h1, .home-span {
+        font-size: 3rem;
+    }
+
+    .home-read-more {
+        width: 200px;
+    }
+
+    .home-read-more p {
+        font-size: 1rem;
+    }
+
+    .home-read-more i {
+        font-size: 2rem;
+    }
+}

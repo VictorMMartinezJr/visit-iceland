@@ -1,0 +1,256 @@
+/***** Tours *****/
+.tours {
+    height: auto;
+    background:#001422;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+
+.tours-title {
+    margin-top: 5rem;
+    font-weight: 900;
+}
+
+.tour::before {
+    content: '';
+    width: 100%;
+    height:30px;
+    position: absolute;
+    background: linear-gradient(0deg, transparent, #001422);
+    top: 0;
+}
+
+.tour {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+.tour::after {
+    content: '';
+    width: 100%;
+    height:30px;
+    position: absolute;
+    background: linear-gradient(180deg, transparent, #001422);
+    bottom: 0;
+}
+
+
+.tour.black-fade:after {
+    content: '';
+    width: 100%;
+    height:30px;
+    position: absolute;
+    background: linear-gradient(180deg, transparent, #000);
+    bottom: 0;
+}
+
+.tour.black-fade {
+    margin-bottom: 0;
+}
+
+.tour-info {
+    width: 40%;
+    min-height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tour-text {
+    margin-top: 1rem;
+}
+
+.tour-text h2 {
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.tour-text p {
+    width: 80%;
+}
+
+.tour-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;    
+}
+
+.sale-tour {
+    height: 80vh;
+    background: url('https://images.unsplash.com/photo-1610483527491-b8fe09413a8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
+    background-color: rgba(0,0,0,.4); /* Tint color */
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+.sale-info {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10rem;
+}
+
+.sale-info span h2 {
+    color: rgb(238, 238, 27);
+}
+
+.sale-info p {
+    width: 30%;
+    margin-bottom: 3rem;
+}
+
+.sale-tour span {
+    position: relative;
+}
+
+.sale-sub-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10rem;
+}
+
+.sale-tour::before {
+    content: '';
+    width: 100%;
+    height:30px;
+    position: absolute;
+    background: linear-gradient(0deg, transparent, #000);
+    top: 0;
+}
+
+.sale-tour::after {
+    content: '';
+    width: 100%;
+    height:50px;
+    position: absolute;
+    background: linear-gradient(180deg, transparent, #000);
+    bottom: 0;
+}
+
+@media screen and (max-width: 1290px) {
+    .tour {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .tours-title {
+        font-size: 4rem;
+    }
+
+    .tour-info {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    
+    .tour-btn {
+        margin-bottom: 1rem;
+    }
+
+    .tour-btn i{
+        font-size: 2rem;
+    }    
+
+    .tour-text p {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .sale-tour {
+        height: 40vh;
+    }
+
+    .sale-info {
+        margin-left: 5rem;
+
+    }
+    .sale-sub-header {
+        margin-right: 5rem;
+    }
+    .sale-info p {
+        width: 70%;
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .sale-tour {
+        background-color: rgba(0,0,0,.4); /* Tint color */
+    }
+    .sale-info p {
+        width: 70%;
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .tour {
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    .tours-title {
+        font-size: 2.5rem;
+    }
+
+    .extra-info {
+        display: none;
+    }
+
+    .sale-tour {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tours-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .tours-title {
+        font-size: 1.5rem;
+    }
+
+    .tour-h1 {
+        font-size: 1.3rem;
+    }
+}

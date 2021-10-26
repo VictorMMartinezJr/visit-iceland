@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.nav {
+    position: fixed;
+    height: 8vh;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9;
+}
+
+.nav.background {
+    background: #011f35;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.nav-link {
+    position: relative;
+    padding: 2rem;
+    font-size: 1.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.nav-link::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width .2s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .2s ease-in-out;
+}
+
+.nav-icon {
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 0 0 20px #fff;
+    letter-spacing: 5px;
+}
+
+#burger {
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.nav-links.active {
+    transform: scale(1);
+    animation: transform .2s ease-in-out;
+}
+
+@media screen and (max-width: 1025px) {
+    .nav-links {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .nav {
+        justify-content: space-around;
+    }
+
+    .nav-icon {
+        font-size: 2.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background: #011f35;
+        top: 8vh;
+        height: 50vh;
+        width: 100%;
+        color: #000;
+        z-index: 2;
+        transform: scale(0);
+        transition: transform .2s ease-in-out;
+        border-radius: 0;
+        overflow-x: hidden;
+    }
+
+    .nav-link {
+        font-weight: 900;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    #burger {
+        display: block;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .nav-icon {
+        letter-spacing: 1px;
+    }
+}

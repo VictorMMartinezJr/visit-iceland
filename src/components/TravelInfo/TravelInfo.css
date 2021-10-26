@@ -1,0 +1,128 @@
+.travel-info-container {
+  background: #001422;
+  color: #fff;
+  font-family: 'Sora', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.travel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin-top: 2rem;
+}
+
+.travel-info p {
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.travel-info-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.travel-info-head h1,
+.safetravelis h2,
+.ice-sar h2,
+.driving h2,
+.travel-plan h2,
+.wear h2 {
+  font-weight: 900;
+}
+
+.safetravelis {
+  display: flex;
+  height: auto;
+}
+
+.safetravelis p {
+  width: 90%;
+}
+
+.safetravelis img {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #000;
+}
+
+.ice-sar,
+.driving,
+.travel-plan {
+  height: auto;
+}
+
+.ice-sar span {
+  font-weight: 700;
+}
+
+.travel-plan {
+  margin-top: 3rem;
+}
+
+.danger-h2 {
+  width: 90%;
+}
+
+.wear {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1290px) {
+  .travel-info {
+    width: 90%;
+  }
+  .safetravelis {
+    flex-direction: column;
+  }
+
+  .safetravelis img {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .travel-info h1{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .travel-info h3 {
+    display: none;
+  }
+  .safetravelis img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .safetravelis img {
+    object-fit: contain;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .travel-info {
+    width: 95%;
+  }
+
+  .travel-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .travel-info p {
+    width: 100%;
+  }
+}

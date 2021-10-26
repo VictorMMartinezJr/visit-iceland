@@ -1,0 +1,103 @@
+.home-footer-secondary {
+    background: #001422;
+    position: relative;
+}
+
+.footer-headers.secondary {
+    font-weight: 900;
+}
+
+.footer-contact-email {
+    text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+    .home-footer-secondary {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .home-footer-secondary {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        height: auto;
+        width: 95%;
+    }
+
+    .footer-socials.secondary {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .footer-link-list.secondary {
+        justify-content: space-evenly;
+        width: 60%;
+    }
+
+    .footer-links.secondary {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 1rem;
+    }
+
+    .footer-link.secondary {
+        margin-right: .5rem;
+    }
+
+    .footer-info.secondary {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .footer-contact-email {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+} 
+
+@media screen and (max-width: 540px) {
+    .footer-socials.secondary {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .footer-link-list.secondary {
+        justify-content: space-evenly;
+        width: 60%;
+    }
+
+    .footer-links.secondary {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 0;
+    }
+
+    .footer-link.secondary {
+        margin-right: 0;
+    }
+
+    .footer-link-list.secondary.column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-info.secondary {
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
