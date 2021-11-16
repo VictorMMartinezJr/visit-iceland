@@ -47,18 +47,18 @@ const Navbar = () => {
                 <li><h1 className="nav-icon">ICELAND</h1></li>
             </Link>
             <i id='burger' className={`fas fa-${navOpen ? 'times' : 'bars'}`} onClick={() => setNavOpen(!navOpen)}></i>
-            <ul className={navOpen ? 'nav-links active' : 'nav-links'}>
+            <ul className={navOpen ? 'nav-links active' : 'nav-links'} onClick={scrollToTop}>
                 <Link to='/' style={{ textDecoration: 'none', color: '#fff ' }}>
-                    <li className="nav-link" onClick={scrollToTop}>Home</li>
+                    <li className="nav-link">Home</li>
                 </Link>
-                <Link to='/explore' style={{ textDecoration: 'none', color: '#fff ' }}>
-                    <li className="nav-link" onClick={scrollToTop}>Explore</li>
+                <Link to='/explore' style={{ textDecoration: 'none', color: '#fff ' }} onClick={scrollToTop}>
+                    <li className="nav-link">Explore</li>
                 </Link>
-                <Link to='travelinfo' style={{ textDecoration: 'none', color: '#fff ' }}>
-                    <li className="nav-link" onClick={scrollToTop}>Travel Info</li>
+                <Link to='travelinfo' style={{ textDecoration: 'none', color: '#fff ' }} onClick={scrollToTop}>
+                    <li className="nav-link">Travel Info</li>
                 </Link>
-                <Link to='contact' style={{ textDecoration: 'none', color: '#fff ' }}>
-                    <li className="nav-link" onClick={scrollToTop}>Contact</li>
+                <Link to='contact' style={{ textDecoration: 'none', color: '#fff ' }} onClick={scrollToTop}>
+                    <li className="nav-link">Contact</li>
                 </Link>
 
             </ul>

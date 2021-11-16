@@ -64,11 +64,6 @@
     font-size: 2rem;
 }
 
-.nav-links.active {
-    transform: scale(1);
-    animation: transform .2s ease-in-out;
-}
-
 @media screen and (max-width: 1025px) {
     .nav-links {
         width: 70%;
@@ -99,6 +94,11 @@
         transition: transform .2s ease-in-out;
         border-radius: 0;
         overflow-x: hidden;
+    }
+
+    .nav-links.active {
+        transform: scale(1);
+        animation: transform .2s ease-in-out;
     }
 
     .nav-link {

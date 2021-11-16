@@ -24,17 +24,17 @@ const Footer = () => {
             <div className='footer-links secondary'>
                 <i className="fas fa-igloo"></i>
                 <ul className='footer-link-list secondary column'>
-                    <Link to='/' style={{ textDecoration: 'none', color: '#fff ' }}>
-                        <li className='footer-link secondary' onClick={scrollToTop}>Home</li>
+                    <Link to='/' style={{ textDecoration: 'none', color: '#fff ' }} onClick={scrollToTop}>
+                        <li className='footer-link secondary'>Home</li>
                     </Link>
-                    <Link to='/explore' style={{ textDecoration: 'none', color: '#fff ' }}>
-                        <li className='footer-link secondary' onClick={scrollToTop}>Explore</li>
+                    <Link to='/explore' style={{ textDecoration: 'none', color: '#fff ' }} onClick={scrollToTop}>
+                        <li className='footer-link secondary'>Explore</li>
                     </Link>
-                    <Link to='/travelinfo' style={{ textDecoration: 'none', color: '#fff ' }}>
-                        <li className='footer-link secondary' onClick={scrollToTop}>Travel Info</li>
+                    <Link to='/travelinfo' style={{ textDecoration: 'none', color: '#fff ' }} onClick={scrollToTop}>
+                        <li className='footer-link secondary'>Travel Info</li>
                     </Link>
-                    <Link to='/contact' style={{ textDecoration: 'none', color: '#fff ' }}>
-                        <li className='footer-link secondary' onClick={scrollToTop}>Contact</li>
+                    <Link to='/contact' style={{ textDecoration: 'none', color: '#fff ' }} onClick={scrollToTop}>
+                        <li className='footer-link secondary'>Contact</li>
                     </Link>
                 </ul>
             </div>

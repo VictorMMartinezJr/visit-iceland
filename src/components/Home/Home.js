@@ -1,12 +1,12 @@
 import './Home.css';
 import { motion } from 'framer-motion';
-import Navbar from './Navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
 import { useEffect } from 'react'
-import Carousel from './Carousels/ExploreCarousel';
+import Carousel from '../Carousels/ExploreCarousel';
 import Aos from 'aos';
 import { Link } from 'react-router-dom';
-import { ActivityTour, AroundTour, CuisineTour } from './Tours/Tours';
-import MainHeader from './MainHeader/MainHeader';
+import { ActivityTour, AroundTour, CuisineTour } from '../Tours/Tours';
+import MainHeader from '../MainHeader/MainHeader';
 
 const buttonVariants = {
     hover: {
