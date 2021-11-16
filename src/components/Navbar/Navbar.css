@@ -32,6 +32,25 @@
 
 .nav-link:hover {
     text-shadow: 0 0 20px #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .2s ease-in-out;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: #fff;
+    transition: width .2s ease-in-out;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    transition: width .2s ease-in-out;
 }
 
 .nav-icon {
