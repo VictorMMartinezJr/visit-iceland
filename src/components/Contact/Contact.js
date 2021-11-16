@@ -14,7 +14,7 @@ const containerVariants = {
     }
 }
 
-const emailRedex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const emailRejex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const Contact = () => {
     const [showModal, setShowModal] = useState(false);
@@ -48,7 +48,7 @@ const Contact = () => {
                             {errors.name && <span className='form-input-error'>{errors.name.message}</span>}
 
                             {/***** Email input *****/}
-                            <input className='form-input' type="text" placeholder='Email' {...register('email', { required: 'Please type your email', pattern: emailRedex })} />
+                            <input className='form-input' type="text" placeholder='Email' {...register('email', { required: 'Please type your email', pattern: emailRejex })} />
                             {errors.email?.type === 'pattern' && <span className='form-input-error'>Not a valid email</span>}
                             {errors.email?.type === 'required' && <span className='form-input-error'>{errors.email.message}</span>}
 
