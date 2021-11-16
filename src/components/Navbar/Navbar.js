@@ -47,8 +47,8 @@ const Navbar = () => {
                 <li><h1 className="nav-icon">ICELAND</h1></li>
             </Link>
             <i id='burger' className={`fas fa-${navOpen ? 'times' : 'bars'}`} onClick={() => setNavOpen(!navOpen)}></i>
-            <ul className={navOpen ? 'nav-links active' : 'nav-links'} onClick={scrollToTop}>
-                <Link to='/' style={{ textDecoration: 'none', color: '#fff ' }}>
+            <ul className={navOpen ? 'nav-links active' : 'nav-links'}>
+                <Link to='/' style={{ textDecoration: 'none', color: '#fff ' }} onClick={scrollToTop}>
                     <li className="nav-link">Home</li>
                 </Link>
                 <Link to='/explore' style={{ textDecoration: 'none', color: '#fff ' }} onClick={scrollToTop}>
