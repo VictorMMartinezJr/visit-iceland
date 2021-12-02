@@ -1,5 +1,7 @@
 # Visit Iceland
 
+A dynamic web app for users to get information on the country of Iceland.
+
 [Live Site](https://traveltoiceland.netlify.app/)
 
 
